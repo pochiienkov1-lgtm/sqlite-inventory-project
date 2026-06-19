@@ -19,6 +19,7 @@ DB_NAME = 'warehouse.db'
 
 
 def show_menu():
+    print()
     print("1. Показать все товары")
     print("2. Добавить товар")
     print("3. Показать товары с низким остатком")
