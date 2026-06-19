@@ -89,7 +89,7 @@ while True:
         products_below_stock = get_products_below_stock(DB_NAME, MIN_STOCK)
         
         print('Товары с низким остатком:')
-        print_products(products_below_stock)
+        print_products(products_below_stock, "Товаров с низким остатком нет.")
         print()
     elif choice == '4':
         products_below_stock = get_products_below_stock(DB_NAME, MIN_STOCK)

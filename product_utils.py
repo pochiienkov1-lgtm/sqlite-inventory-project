@@ -15,8 +15,13 @@ def get_stock_status(product):
         return "Много"
 
 
-def print_products(products):
+def print_products(products, empty_message="Список товаров пуст."):
+    if not products:
+        print(empty_message)
+        return
+     
     for product in products:
+        
         product_id = product['id']
         name = product['name']
         stock = product['stock']
@@ -34,6 +39,10 @@ def print_products(products):
 
 
 def print_order_products(order_products, min_stock):
+    if not order_products:
+        print('Товаров для дозаказа нет.')
+        return
+    
     for product in order_products:
         product_id = product['id']
         name = product['name']
